@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+body {
+    margin: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;   
+  }
+    
+    .header2 {
+      height: 1110vh;
+      display: flex;
+      align-items: center;
+      color: white;
+     font-family: 'Kanit', sans-serif;
+    }
+    
+    .content {
+      max-width: 40rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin: auto;
+      text-align: center ;
+      
+      
+     
+    }
+    
+    .header2-video {
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        
+        
+    }
+    
+    .header2-video video {
+      min-width: 100%;
+      min-height: 100%;
+      
+    }
+    
+    .header2-overlay {
+      height: 555vw;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #303952;
+      z-index: -1;
+      opacity: .75;
+      background-size: cover;
+      
+      
+      
+    }
+    
+    .header2-content {
+      z-index:0;
+      
+    }
+    
+    .header2-content h1 {
+      font-size: 50px;
+      margin-bottom: 0;
+      font-family: 'Lobster', cursive;
+     
+    }
+    
+    .header2-content p {
+      font-size: 1.5rem;
+      display: block;
+      padding-bottom: 2rem;
+      
+    }
+    
+    .btn {
+      background: orange;
+      color:black;
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+      text-decoration-style: none;
+      
+    }
+    
+    @media (max-width: 960px) {
+      .content {
+        padding: 1 3rem 0 3rem;
+        
+      }
+    }
+
+        
+        h2{
+        display:inline-block;
+       position: relative;
+       color: #f85b1a;
+       font-family: 'Kanit', sans-serif;
+       border-color: #f85b1a;border-bottom-style: ridge;
+    }
+    
+    h2::after,h2::before{
+        content:'';
+        position: absolute;
+        width: 120px;
+        height: 4px;
+        background-color:currentColor;
+        top: 0.6em;
+        transform: scale(0);
+        transition: all 0.3s ease-in;
+    
+    }
+    h2:hover::before,h2:hover::after{
+        transform: scale(1);
+    }
+    h2::before{
+        left:-140px;
+    }
+    h2::after{
+        right: -140px;
+    }
+    
+    h3{
+        display:inline-block;
+       position: relative;
+       color: #05ADFC;
+       
+       
+      
+    }
+    
+    h3::after,h3::before{
+        content:'';
+        position: absolute;
+        width: 120px;
+        height: 3px;
+        background-color:currentColor;
+        top: 0.6em;
+        transform: scale(0);
+        transition: all 0.2s ease-in;
+    
+    }
+    h3:hover::before,h3:hover::after{
+        transform: scale(1);
+    }
+    h3::before{
+        left:-140px;
+    }
+    h3::after{
+        right: -140px;
+    }
+
+    h4{
+      display:inline-block;
+     position: relative;
+     color: #5322B1;
+     border-color: #5322B1;border-bottom-style: ridge;
+  }
+  
+  h4::after,h4::before{
+      content:'';
+      position: absolute;
+      width: 120px;
+      height: 4px;
+      background-color:currentColor;
+      top: 0.6em;
+      transform: scale(0);
+      transition: all 0.3s ease-in;
+  
+  }
+  h4:hover::before,h4:hover::after{
+      transform: scale(1);
+  }
+  h4::before{
+      left:-140px;
+  }
+  h4::after{
+      right: -140px;
+  }
+
+
+
+#mivideo{
+  position: fixed;
+  background-size: cover;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  z-index: -1;
+  overflow: scroll;
+}
+
+
+.header{
+  background-color: transparent;
+  background-size: cover ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 10px;
+}
+
+.header .logo{
+  cursor: pointer;
+}
+
+.header .logo img{
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo img:hover{
+  transform: scale(1.2);
+}
+
+.header .nav-links{
+  list-style: none;
+}
+
+.header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+  transform: scale(1.1);
+}
+
+.header .nav-links a{
+  font-size: 700;
+  color: #eceff1;
+  text-decoration: none; 
+  
+  
+}
+
+.header .nav-links li a:hover{
+  color: #05ADFC;
+  
+}
+
+.header .btn button{
+  font-weight: 700;
+  color: #e2f1f8;
+  padding: 9px 25px;
+  background: #5322B1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+  background-color: #e2f1f8;
+  color: #05ADFC;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
